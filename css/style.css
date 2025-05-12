@@ -35,7 +35,7 @@ nav ul {
     justify-content: right;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     margin-left: 0px;
     display: flex;
     list-style: none;
@@ -67,12 +67,13 @@ nav ul li a:hover {
 }
 
 h1{
-    background-color:#5CB7B3;
+    background-color: #5cb7b36c;
     color: black;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     padding: 1.875rem;
     font-size:xx-large;
+    font-weight: bold;
 }
 
 .presentacion {
@@ -82,10 +83,6 @@ h1{
     gap: 40px;
     padding: 40px 20px;
 }
-
-.intro 
-{max-width: 500px;}
-
 
 .intro p {
 background-color: white;
@@ -97,7 +94,7 @@ line-height: 1.4;
 }
 
 .presentacion img {
-    width: 250px;
+    width: 300px;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -113,6 +110,75 @@ line-height: 1.4;
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
+}
+
+.frase {
+    width: 100%;
+}
+
+
+.frase-container {
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 100%;
+    background-image: url(../assets/img/manchas\ frase.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px; 
+}
+
+blockquote {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    color: #333;
+    max-width: 80%;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.fundadora {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.foto-fundadora {
+    width: 60%;
+    display: block;
+    border-radius: 8px;
+    margin-left: auto;
+}
+
+.texto-fundadora {
+    position: absolute;
+    top: 10%;
+    width: 60%;
+    background-color: rgba(191, 160, 191, 0.8); 
+    color: #1a1a1a;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.texto-fundadora h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #A477A5;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
 .footer {list-style: none;    
     margin: 0rem;
@@ -131,6 +197,9 @@ line-height: 1.4;
     color: white;
 
 }
+
+
+/*Blog*/
 
 .grid-container {
     display: grid;
@@ -160,7 +229,7 @@ line-height: 1.4;
 
 .articulo {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+    grid-template-columns: 1fr 1fr; 
     align-items: center;
     gap: 1rem;
 }
@@ -179,5 +248,27 @@ button {
     margin-top: 0.5rem;
 }
 
+@media (max-width:768px) {
+    blockquote {
+        font-size: 16px;
+        max-width: 90%;
+    }
+}
 
+@media (max-width:20rem) {
+h1 {font-size: small;}
+.presentacion {flex-direction: column;} 
+.frase-container {   background-size:cover;
+    background-position: center;
+    min-height: 180px;           
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+blockquote {
+
+    font-size: 14px;
+    padding: 0;
+}
+}
 
