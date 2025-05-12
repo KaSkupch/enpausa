@@ -258,17 +258,52 @@ button {
 @media (max-width:20rem) {
 h1 {font-size: small;}
 .presentacion {flex-direction: column;} 
-.frase-container {   background-size:cover;
-    background-position: center;
-    min-height: 180px;           
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-}
-blockquote {
 
-    font-size: 14px;
-    padding: 0;
+.frase-container {   background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200px;           
+    width: 100vw;
+    padding: 2.5rem .625rem;
+    min-height: 12.5rem;
+}
+    
+.blockquote {
+    font-size: 10 px;
+    padding: 10px;
+    max-width: 90%;
+}
+.fundadora {
+    .fundadora {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        padding: 20px;
+    }
+    
+    
+    .foto-fundadora {
+    width: 100%;
+        margin: 0;
+        border-radius: 8px;
+    }
+    
+    .texto-fundadora {
+        position: static;
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
+        text-align: center;
+    }
+    
+    .texto-fundadora h2 {
+        font-size: 20px;
+    }
+    
+    .boton {
+        margin-top: 20px;
+    }
 }
 }
 
