@@ -82,6 +82,8 @@ h1{
     justify-content: center;
     gap: 40px;
     padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .intro p {
@@ -153,6 +155,7 @@ blockquote {
     display: block;
     border-radius: 8px;
     margin-left: auto;
+    margin-bottom: 20px;
 }
 
 .texto-fundadora {
@@ -180,33 +183,16 @@ blockquote {
     text-decoration: none;
     font-weight: bold;
 }
-.footer {list-style: none;    
-    margin: 0rem;
-    padding: 2.5rem;
-    display: flex;         
-    justify-content: center;
-    align-items: center;
-    background-color: #5CB7B3;
-}
-.copy {    margin: 0;
-    padding: 0;
-    display: flex;         
-    justify-content: center;
-    align-items: center;
-    background-color: #5CB7B3;
-    color: white;
 
-}
-
-
-/*Blog*/
+/*equipo*/
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1 fr);
+    grid-template-columns: repeat(2);
     grid-template-rows: repeat(3, 1fr);
 
 }
+
 
 .grid-item1 {
     display: flex;
@@ -214,8 +200,51 @@ blockquote {
     justify-content: center;
     gap: 40px;
     padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
+.sabrina
+{
+    width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.grid-item2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+}
+.eugenia
+{   width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.grid-item3
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.nadia
+{
+    width: 300px;
+    border-radius: 8px;
+    object-fit: cover;}   
+
+
+
+/*Blog*/
 
 .articulos {
     display: flex;
@@ -234,7 +263,6 @@ blockquote {
     gap: 1rem;
 }
 
-
 .imagen {
     text-align: center;
 }
@@ -246,40 +274,114 @@ blockquote {
 
 button {
     margin-top: 0.5rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#a477a57e;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.footer {list-style: none;    
+    margin: 0rem;
+    padding: 2.5rem;
+    display: flex;         
+    justify-content: center;
+    align-items: center;
+    background-color: #5CB7B3;
+}
+.copy {    margin: 0;
+    padding: 0;
+    display: flex;         
+    justify-content: center;
+    align-items: center;
+    background-color: #5CB7B3;
+    color: white;
+
 }
 
 @media (max-width:768px) {
-    blockquote {
+blockquote {
         font-size: 16px;
         max-width: 90%;
     }
+.fundadora {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+}
+.foto-fundadora {
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.texto-fundadora {
+    width: 50%;
+    top: 5%;
+    padding: 10px;
+    font-size: 13px;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.texto-fundadora h2 {
+    font-size: 16px;
+}
+
+.boton {
+    font-size: 13px;
+    padding: 8px 10px;
+    margin-top: 10px;
+
+}
 }
 
 @media (max-width:20rem) {
 h1 {font-size: small;}
-.presentacion {flex-direction: column;} 
+.presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+    .presentacion img {
+        width: 90%;
+        margin: 0 auto;
+    }
 
-.frase-container {   background-size:contain;
+    .intro {
+        width: 100%;
+    }
+
+    .intro a button {
+        margin: 20px auto 0;
+        display: block;
+    } 
+
+.frase-container {  
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 200px;           
+    min-height: 300px;           
     width: 100vw;
-    padding: 2.5rem .625rem;
-    min-height: 12.5rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 5px;
 }
     
-.blockquote {
-    font-size: 10 px;
-    padding: 10px;
+blockquote {
+    font-size: 12px;
+    padding: 8px;
     max-width: 90%;
+    text-align: center;
 }
-.fundadora {
+
     .fundadora {
         display: flex;
         flex-direction: column;
         align-items: center;
         position: static;
         padding: 20px;
+        gap: 1.25rem;
     }
     
     
@@ -303,7 +405,6 @@ h1 {font-size: small;}
     
     .boton {
         margin-top: 20px;
-    }
 }
 }
 
