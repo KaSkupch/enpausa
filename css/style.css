@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* paleta de colores
 #5CB7B3
 #58595B
@@ -25,13 +27,14 @@ font-weight: <weight>;
 font-style: normal;
 */
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
 }
-nav ul {        
+
+nav ul {
     justify-content: right;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
@@ -45,8 +48,9 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;    
+    margin-right: 20px;
 }
+
 nav ul li a {
     color: black;
     text-decoration: none;
@@ -66,13 +70,13 @@ nav ul li a:hover {
     margin-bottom: 0px;
 }
 
-h1{
+h1 {
     background-color: #5cb7b36c;
     color: black;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     padding: 1.875rem;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: bold;
 }
 
@@ -87,12 +91,12 @@ h1{
 }
 
 .intro p {
-background-color: white;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-padding: 0px;
-margin-bottom: 15px;
-font-size: 16px;
-line-height: 1.4;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 .presentacion img {
@@ -128,7 +132,7 @@ line-height: 1.4;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 60px 20px; 
+    padding: 60px 20px;
 }
 
 blockquote {
@@ -162,7 +166,7 @@ blockquote {
     position: absolute;
     top: 10%;
     width: 60%;
-    background-color: rgba(191, 160, 191, 0.8); 
+    background-color: rgba(191, 160, 191, 0.8);
     color: #1a1a1a;
     padding: 20px;
     border-radius: 4px;
@@ -204,12 +208,12 @@ blockquote {
     margin: 0 auto;
 }
 
-.sabrina
-{
+.sabrina {
     width: 300px;
     border-radius: 8px;
     object-fit: cover;
 }
+
 .grid-item2 {
     display: flex;
     align-items: center;
@@ -220,14 +224,14 @@ blockquote {
     margin: 0 auto;
     flex-direction: row-reverse;
 }
-.eugenia
-{   width: 300px;
+
+.eugenia {
+    width: 300px;
     border-radius: 8px;
     object-fit: cover;
 }
 
-.grid-item3
-{
+.grid-item3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,11 +240,12 @@ blockquote {
     max-width: 1000px;
     margin: 0 auto;
 }
-.nadia
-{
+
+.nadia {
     width: 300px;
     border-radius: 8px;
-    object-fit: cover;}   
+    object-fit: cover;
+}
 
 
 
@@ -258,7 +263,7 @@ blockquote {
 
 .articulo {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 1rem;
 }
@@ -276,24 +281,27 @@ button {
     margin-top: 0.5rem;
     display: inline-block;
     padding: 10px 20px;
-    background-color:#a477a57e;
+    background-color: #a477a57e;
     color: black;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
 }
 
-.footer {list-style: none;    
+.footer {
+    list-style: none;
     margin: 0rem;
     padding: 2.5rem;
-    display: flex;         
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #5CB7B3;
 }
-.copy {    margin: 0;
+
+.copy {
+    margin: 0;
     padding: 0;
-    display: flex;         
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #5CB7B3;
@@ -302,48 +310,54 @@ button {
 }
 
 @media (max-width:768px) {
-blockquote {
+    blockquote {
         font-size: 16px;
         max-width: 90%;
     }
-.fundadora {
-    grid-template-columns: 1fr;
-    margin-top: 20px;
-}
-.foto-fundadora {
-    width: 50%;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
 
-.texto-fundadora {
-    width: 50%;
-    top: 5%;
-    padding: 10px;
-    font-size: 13px;
-    text-align: left;
-    margin-top: 15px;
-    margin-left: 35px;
-}
+    .fundadora {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
 
-.texto-fundadora h2 {
-    font-size: 16px;
-}
+    .foto-fundadora {
+        width: 50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
 
-.boton {
-    font-size: 13px;
-    padding: 8px 10px;
-    margin-top: 10px;
+    .texto-fundadora {
+        width: 50%;
+        top: 5%;
+        padding: 10px;
+        font-size: 13px;
+        text-align: left;
+        margin-top: 15px;
+        margin-left: 35px;
+    }
 
-}
+    .texto-fundadora h2 {
+        font-size: 16px;
+    }
+
+    .boton {
+        font-size: 13px;
+        padding: 8px 10px;
+        margin-top: 10px;
+
+    }
 }
 
 @media (max-width:20rem) {
-h1 {font-size: small;}
-.presentacion {
+    h1 {
+        font-size: small;
+    }
+
+    .presentacion {
         flex-direction: column;
         text-align: center;
     }
+
     .presentacion img {
         width: 90%;
         margin: 0 auto;
@@ -356,24 +370,24 @@ h1 {font-size: small;}
     .intro a button {
         margin: 20px auto 0;
         display: block;
-    } 
+    }
 
-.frase-container {  
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 300px;           
-    width: 100vw;
-    padding: 1.5rem 1rem;
-    margin-bottom: 5px;
-}
-    
-blockquote {
-    font-size: 12px;
-    padding: 8px;
-    max-width: 90%;
-    text-align: center;
-}
+    .frase-container {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 300px;
+        width: 100vw;
+        padding: 1.5rem 1rem;
+        margin-bottom: 5px;
+    }
+
+    blockquote {
+        font-size: 12px;
+        padding: 8px;
+        max-width: 90%;
+        text-align: center;
+    }
 
     .fundadora {
         display: flex;
@@ -383,14 +397,14 @@ blockquote {
         padding: 20px;
         gap: 1.25rem;
     }
-    
-    
+
+
     .foto-fundadora {
-    width: 100%;
+        width: 100%;
         margin: 0;
         border-radius: 8px;
     }
-    
+
     .texto-fundadora {
         position: static;
         width: 100%;
@@ -398,13 +412,12 @@ blockquote {
         border-radius: 0;
         text-align: center;
     }
-    
+
     .texto-fundadora h2 {
         font-size: 20px;
     }
-    
+
     .boton {
         margin-top: 20px;
+    }
 }
-}
-
