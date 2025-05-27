@@ -1,423 +1,381 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Paleta de colores */
+/* Colores con opacidad o variantes */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* paleta de colores
-#5CB7B3
-#58595B
-#A477A5
-
-
-.montserrat-<uniquifier> {
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal;
-}
-
-.roboto-<uniquifier> {
-font-family: "Roboto", sans-serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal;
-*/
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+  padding: 20px 40px;
 }
 
 nav ul {
-    justify-content: right;
-    align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
-    font-size: 1.25rem;
-    margin-left: 0px;
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin-right: 20px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
 }
-
 nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.logo {
-    display: flex;
-    height: 200px;
-    width: auto;
-    margin-left: 25px;
-    padding: 0rem;
-    margin-bottom: 0px;
+  text-decoration: underline;
 }
 
 h1 {
-    background-color: #5cb7b36c;
-    color: black;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    padding: 1.875rem;
-    font-size: xx-large;
-    font-weight: bold;
+  background-color: rgba(92, 183, 179, 0.4235294118);
+  color: black;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 1.875rem;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  height: 200px;
+  width: auto;
+  margin-left: 25px;
 }
 
 .presentacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .intro p {
-    background-color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    line-height: 1.4;
+  background-color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .presentacion img {
-    width: 300px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-
-.intro a button {
-    border: 4px #A477A5;
-    margin-top: 1.25rem;
-    color: black;
-    background-color: #A477A5;
-    text-decoration: none;
-    padding: 10px 18px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.frase {
-    width: 100%;
-}
-
-
-.frase-container {
-    display: grid;
-    place-items: center;
-    position: relative;
-    width: 100%;
-    background-image: url(../assets/img/manchas\ frase.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 60px 20px;
-}
-
-blockquote {
-    text-align: center;
-    font-style: italic;
-    font-size: 20px;
-    color: #333;
-    max-width: 80%;
-    padding: 10px 20px;
-    border-radius: 8px;
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .fundadora {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 900px;
-    margin: auto;
-    margin-top: 40px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 40px;
 }
 
 .foto-fundadora {
-    width: 60%;
-    display: block;
-    border-radius: 8px;
-    margin-left: auto;
-    margin-bottom: 20px;
+  width: 60%;
+  display: block;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-bottom: 20px;
 }
 
 .texto-fundadora {
-    position: absolute;
-    top: 10%;
-    width: 60%;
-    background-color: rgba(191, 160, 191, 0.8);
-    color: #1a1a1a;
-    padding: 20px;
-    border-radius: 4px;
+  position: absolute;
+  top: 10%;
+  width: 60%;
+  background-color: rgba(164, 119, 165, 0.4941176471);
+  color: #1a1a1a;
+  padding: 20px;
+  border-radius: 4px;
 }
 
 .texto-fundadora h2 {
-    margin-top: 0;
-    font-size: 22px;
+  margin-top: 0;
+  font-size: 22px;
 }
-
-.boton {
-    display: inline-block;
-    margin-top: 15px;
-    background-color: #A477A5;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/*equipo*/
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(3, 1fr);
-
+  display: grid;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(3, 1fr);
 }
 
-
 .grid-item1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .sabrina {
-    width: 300px;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .grid-item2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-direction: row-reverse;
 }
 
 .eugenia {
-    width: 300px;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .grid-item3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .nadia {
-    width: 300px;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
-
-
-/*Blog*/
-
 .articulos {
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
 }
 
 .articulo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
 }
 
 .imagen {
-    text-align: center;
+  text-align: center;
 }
 
 .imagen img {
-    width: 100%;
-    height: auto;
-}
-
-button {
-    margin-top: 0.5rem;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #a477a57e;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+  width: 100%;
+  height: auto;
 }
 
 .footer {
-    list-style: none;
-    margin: 0rem;
-    padding: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #5CB7B3;
+  list-style: none;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5CB7B3;
 }
 
 .copy {
-    margin: 0;
-    padding: 0;
+  background-color: #5CB7B3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.intro a button {
+  border: 4px #A477A5;
+  margin-top: 1.25rem;
+  color: white;
+  background-color: #A477A5;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 1.25rem;
+  background-color: #A477A5;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+.boton:hover {
+  background-color: #A477A5;
+}
+
+button {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(164, 119, 165, 0.4941176471);
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  height: 200px;
+  width: auto;
+  margin-left: 25px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.frase {
+  width: 100%;
+}
+
+.frase-container {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 100%;
+  background-image: url(../assets/img/manchas\ frase.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+}
+
+blockquote {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  color: #333;
+  max-width: 80%;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  blockquote {
+    font-size: 16px;
+    max-width: 90%;
+  }
+  .fundadora {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+  .foto-fundadora {
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .texto-fundadora {
+    width: 50%;
+    top: 5%;
+    padding: 10px;
+    font-size: 13px;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 35px;
+  }
+  .texto-fundadora h2 {
+    font-size: 16px;
+  }
+  .boton {
+    font-size: 13px;
+    padding: 8px 10px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 20rem) {
+  h1 {
+    font-size: small;
+  }
+  .presentacion {
+    flex-direction: column;
+    text-align: center;
+  }
+  .presentacion img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .intro {
+    width: 100%;
+  }
+  .intro a button {
+    margin: 20px auto 0;
+    display: block;
+  }
+  .frase-container {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    width: 100vw;
+    padding: 1.5rem 1rem;
+    margin-bottom: 5px;
+  }
+  blockquote {
+    font-size: 12px;
+    padding: 8px;
+    max-width: 90%;
+    text-align: center;
+  }
+  .fundadora {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #5CB7B3;
-    color: white;
-
+    position: static;
+    padding: 20px;
+    gap: 1.25rem;
+  }
+  .foto-fundadora {
+    width: 100%;
+    margin: 0;
+    border-radius: 8px;
+  }
+  .texto-fundadora {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0;
+    text-align: center;
+  }
+  .texto-fundadora h2 {
+    font-size: 20px;
+  }
+  .boton {
+    margin-top: 20px;
+  }
 }
 
-@media (max-width:768px) {
-    blockquote {
-        font-size: 16px;
-        max-width: 90%;
-    }
-
-    .fundadora {
-        grid-template-columns: 1fr;
-        margin-top: 20px;
-    }
-
-    .foto-fundadora {
-        width: 50%;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-
-    .texto-fundadora {
-        width: 50%;
-        top: 5%;
-        padding: 10px;
-        font-size: 13px;
-        text-align: left;
-        margin-top: 15px;
-        margin-left: 35px;
-    }
-
-    .texto-fundadora h2 {
-        font-size: 16px;
-    }
-
-    .boton {
-        font-size: 13px;
-        padding: 8px 10px;
-        margin-top: 10px;
-
-    }
-}
-
-@media (max-width:20rem) {
-    h1 {
-        font-size: small;
-    }
-
-    .presentacion {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .presentacion img {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .intro {
-        width: 100%;
-    }
-
-    .intro a button {
-        margin: 20px auto 0;
-        display: block;
-    }
-
-    .frase-container {
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 300px;
-        width: 100vw;
-        padding: 1.5rem 1rem;
-        margin-bottom: 5px;
-    }
-
-    blockquote {
-        font-size: 12px;
-        padding: 8px;
-        max-width: 90%;
-        text-align: center;
-    }
-
-    .fundadora {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: static;
-        padding: 20px;
-        gap: 1.25rem;
-    }
-
-
-    .foto-fundadora {
-        width: 100%;
-        margin: 0;
-        border-radius: 8px;
-    }
-
-    .texto-fundadora {
-        position: static;
-        width: 100%;
-        padding: 20px;
-        border-radius: 0;
-        text-align: center;
-    }
-
-    .texto-fundadora h2 {
-        font-size: 20px;
-    }
-
-    .boton {
-        margin-top: 20px;
-    }
-}
+/*# sourceMappingURL=style.css.map */

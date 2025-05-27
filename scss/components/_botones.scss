@@ -1,0 +1,38 @@
+
+
+.intro a button {
+    border: 4px #A477A5;
+    margin-top: 1.25rem;
+    color: white;
+    background-color: #A477A5;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.boton {
+  display: inline-block;
+  margin-top: 1.25rem;
+  background-color: #A477A5;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #A477A5;
+  }
+}
+button {
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a477a57e;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}

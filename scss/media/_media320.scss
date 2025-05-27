@@ -1,0 +1,73 @@
+@media (max-width:20rem) {
+    h1 {
+        font-size: small;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentacion img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .intro a button {
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    .frase-container {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 300px;
+        width: 100vw;
+        padding: 1.5rem 1rem;
+        margin-bottom: 5px;
+    }
+
+    blockquote {
+        font-size: 12px;
+        padding: 8px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .fundadora {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        padding: 20px;
+        gap: 1.25rem;
+    }
+
+
+    .foto-fundadora {
+        width: 100%;
+        margin: 0;
+        border-radius: 8px;
+    }
+
+    .texto-fundadora {
+        position: static;
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .texto-fundadora h2 {
+        font-size: 20px;
+    }
+
+    .boton {
+        margin-top: 20px;
+    }
+}

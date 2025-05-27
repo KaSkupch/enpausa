@@ -1,0 +1,41 @@
+@media (max-width:768px) {
+    blockquote {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .fundadora {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+
+    .foto-fundadora {
+        width: 50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .texto-fundadora {
+        width: 50%;
+        top: 5%;
+        padding: 10px;
+        font-size: 13px;
+        text-align: left;
+        margin-top: 15px;
+        margin-left: 35px;
+    }
+
+    .texto-fundadora h2 {
+        font-size: 16px;
+    }
+
+    .boton {
+        font-size: 13px;
+        padding: 8px 10px;
+        margin-top: 10px;
+
+    }}
+    
+
+
+

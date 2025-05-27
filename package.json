@@ -1,0 +1,19 @@
+{
+  "name": "mi-carpeta-enpausa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaSkupch/enpausa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaSkupch/enpausa/issues"
+  },
+  "homepage": "https://github.com/KaSkupch/enpausa#readme",
+  "description": ""
+}
