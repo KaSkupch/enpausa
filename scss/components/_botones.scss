@@ -13,14 +13,17 @@
 }
 .boton {
   display: inline-block;
-  margin-top: 1.25rem;
+  margin-top: 8px;
   background-color: #A477A5;
   color: white;
-  padding: 10px 15px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
+  max-width: 200px;
+  width: auto;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
 
   &:hover {
     background-color: #A477A5;

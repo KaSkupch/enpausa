@@ -55,11 +55,16 @@
     font-size: 22px;
 }
 
+
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2);
     grid-template-rows: repeat(3, 1fr);
+
 }
+
+
 .grid-item1 {
     display: flex;
     align-items: center;
@@ -69,11 +74,13 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .sabrina {
     width: 300px;
     border-radius: 8px;
     object-fit: cover;
 }
+
 .grid-item2 {
     display: flex;
     align-items: center;
@@ -106,7 +113,6 @@
     border-radius: 8px;
     object-fit: cover;
 }
-
 .articulos {
     display: flex;
     flex-direction: column;
