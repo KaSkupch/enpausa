@@ -8,7 +8,7 @@
     gap: 40px;
     padding: 40px 20px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 .intro p {
     background-color: white;
@@ -61,7 +61,13 @@
     display: grid;
     grid-template-columns: repeat(2);
     grid-template-rows: repeat(3, 1fr);
-
+    p {   
+    background-color: white;
+    font-family:$tipografia-texto;
+    padding: 10px 40px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.4;}
 }
 
 
@@ -79,6 +85,7 @@
     width: 300px;
     border-radius: 8px;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 
 .grid-item2 {
@@ -96,6 +103,7 @@
     width: 300px;
     border-radius: 8px;
     object-fit: cover;
+    margin-bottom: 80px;
 }
 
 .grid-item3 {
@@ -108,10 +116,12 @@
     margin: 0 auto;
 }
 
+
 .nadia {
     width: 300px;
     border-radius: 8px;
     object-fit: cover;
+    margin-bottom: 80px;
 }
 .articulos {
     display: flex;
@@ -119,22 +129,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    
     padding: 40px 20px;
+    margin: auto 40px;
 }
 
 .articulo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 1rem;
+    margin-left: 20px;
 }
 
 .imagen {
     text-align: center;
+    width: 60%;
+    display: block;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 .imagen img {
     width: 100%;
     height: auto;
 }
+

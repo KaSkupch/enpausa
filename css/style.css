@@ -61,7 +61,7 @@ h1 {
   gap: 40px;
   padding: 40px 20px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .intro p {
@@ -116,6 +116,14 @@ h1 {
   grid-template-columns: repeat(2);
   grid-template-rows: repeat(3, 1fr);
 }
+.grid-container p {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 40px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+}
 
 .grid-item1 {
   display: flex;
@@ -131,6 +139,7 @@ h1 {
   width: 300px;
   border-radius: 8px;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .grid-item2 {
@@ -148,6 +157,7 @@ h1 {
   width: 300px;
   border-radius: 8px;
   object-fit: cover;
+  margin-bottom: 80px;
 }
 
 .grid-item3 {
@@ -164,6 +174,7 @@ h1 {
   width: 300px;
   border-radius: 8px;
   object-fit: cover;
+  margin-bottom: 80px;
 }
 
 .articulos {
@@ -172,19 +183,24 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
   padding: 40px 20px;
+  margin: auto 40px;
 }
 
 .articulo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 1rem;
+  margin-left: 20px;
 }
 
 .imagen {
   text-align: center;
+  width: 60%;
+  display: block;
+  border-radius: 8px;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 .imagen img {
@@ -291,7 +307,7 @@ blockquote {
   background-color: #ddd;
   padding: 2rem;
   max-width: 400px;
-  margin: 2rem auto;
+  margin: 50px auto;
   font-family: "Montserrat", sans-serif;
   border-radius: 8px;
 }
