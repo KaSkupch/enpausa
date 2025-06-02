@@ -1,18 +1,27 @@
 .footer {
-  list-style: none;
-  padding: 2.5rem;
+  background-color: #5CB7B3;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5CB7B3;
+  gap: 2rem;
+  padding: 2rem;
+
+  a {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .copy {
   background-color: #5CB7B3;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
 }

@@ -49,7 +49,7 @@ h1 {
 
 .logo {
   display: flex;
-  height: 200px;
+  height: 100px;
   width: auto;
   margin-left: 25px;
 }
@@ -111,6 +111,7 @@ h1 {
   font-size: 22px;
 }
 
+/*Equipo*/
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2);
@@ -184,7 +185,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
-  margin: auto 40px;
+  margin: 20px 40px;
 }
 
 .articulo {
@@ -192,6 +193,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   margin-left: 20px;
+  gap: 1.25rem;
 }
 
 .imagen {
@@ -209,22 +211,29 @@ h1 {
 }
 
 .footer {
-  list-style: none;
-  padding: 2.5rem;
+  background-color: #5CB7B3;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5CB7B3;
+  gap: 2rem;
+  padding: 2rem;
+}
+.footer a {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.footer a:hover {
+  transform: scale(1.2);
 }
 
 .copy {
   background-color: #5CB7B3;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
 }
 
 .intro a button {
@@ -339,6 +348,8 @@ blockquote {
   blockquote {
     font-size: 16px;
     max-width: 90%;
+    margin-bottom: 20px;
+    gap: 1.25rem;
   }
   .fundadora {
     grid-template-columns: 1fr;
@@ -366,10 +377,61 @@ blockquote {
     padding: 8px 10px;
     margin-top: 10px;
   }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .grid-container p {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .grid-item1,
+  .grid-item2,
+  .grid-item3 {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 20px;
+  }
+  .sabrina,
+  .eugenia,
+  .nadia {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .imagen {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+  .articulos {
+    margin: 20px;
+    padding: 20px;
+  }
+  .footer {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  .footer a {
+    font-size: 1.5rem;
+  }
 }
+.copy {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
 @media (max-width: 20rem) {
   h1 {
     font-size: small;
+  }
+  .logo {
+    height: 100px;
   }
   .presentacion {
     flex-direction: column;
@@ -407,11 +469,11 @@ blockquote {
     align-items: center;
     position: static;
     padding: 20px;
-    gap: 1.25rem;
+    margin: 0.625rem 20px;
   }
   .foto-fundadora {
     width: 100%;
-    margin: 0;
+    margin: 20px 10px;
     border-radius: 8px;
   }
   .texto-fundadora {
@@ -420,6 +482,7 @@ blockquote {
     padding: 20px;
     border-radius: 0;
     text-align: center;
+    margin-right: 20px;
   }
   .texto-fundadora h2 {
     font-size: 20px;
@@ -427,6 +490,65 @@ blockquote {
   .boton {
     margin-top: 20px;
   }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .grid-container p {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  .grid-item1,
+  .grid-item2,
+  .grid-item3 {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 15px;
+  }
+  .sabrina,
+  .eugenia,
+  .nadia {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .formulario {
+    padding: 1rem;
+    max-width: 100%;
+    margin: 20px 10px;
+  }
+  .formulario p {
+    font-size: 0.875rem;
+  }
+  .formulario label {
+    font-size: 0.875rem;
+  }
+  .formulario .form-input {
+    font-size: 0.875rem;
+  }
+  .articulo {
+    gap: 1rem;
+  }
+  .imagen {
+    width: 100%;
+    margin: 0 auto 15px;
+  }
+  .articulos {
+    margin: 10px;
+    padding: 10px;
+  }
+  .footer {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  .footer a {
+    font-size: 1.5rem;
+  }
+}
+.copy {
+  font-size: 0.75rem;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
