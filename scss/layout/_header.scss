@@ -3,7 +3,7 @@
 @use "../base/tipografia" as *;
 header {
 @include flex;
-  padding: 20px 40px;
+  padding: 20px 1rem;
 }
 
 nav ul {
