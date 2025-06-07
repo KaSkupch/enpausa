@@ -15,14 +15,16 @@
     font-family:$tipografia-texto;
     padding: 0px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 16x;
     line-height: 1.4;
 }
 .presentacion img {
     width: 300px;
     border-radius: 8px;
     object-fit: cover;
+
 }
+
 .fundadora {
     position: relative;
     display: grid;
@@ -155,4 +157,82 @@
     height: auto;
 }
 
+/*contacto*/
+
+.contacto {
+  padding: 40px 20px;
+  background-color: #fff;}
+
+  .intro-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #e9d6e8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+
+    .texto {
+      flex: 1 1 60%;
+      padding-right: 20px;
+
+      h2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+
+    .imagen {
+      flex: 1 1 30%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .datos-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+
+    .dato {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+
+      i {
+        font-size: 1.5rem;
+        margin-top: 4px;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+    }
+}
 

@@ -1,4 +1,4 @@
-@media (max-width:20rem) {
+@media (max-width:360px) {
     h1 {
         font-size: small;
     }
@@ -11,35 +11,42 @@
     }
 
     .presentacion img {
-        width: 90%;
+        max-width: 100%;
+        height: auto;
+        display: block;
         margin: 0 auto;
     }
 
     .intro {
         width: 100%;
     }
+    .intro p {font-size: 12px;}
 
     .intro a button {
         margin: 20px auto 0;
         display: block;
     }
+  .frase {
+    padding: 16px 12px; 
+  }
 
-    .frase-container {
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 300px;
-        width: 100vw;
-        padding: 1.5rem 1rem;
-        margin-bottom: 5px;
-    }
+  .frase-container {
+    min-height: auto; 
+    padding: 1rem;
+    margin-bottom:0px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-    blockquote {
-        font-size: 12px;
-        padding: 8px;
-        max-width: 90%;
-        text-align: center;
-     }
+  blockquote {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+    line-height: 1.4;
+    color: #333;
+  }
+
 
     .fundadora {
         display: flex;
@@ -60,10 +67,10 @@
     .texto-fundadora {
         position: static;
         width: 100%;
-        padding: 20px;
+        padding: 20px 20px;
         border-radius: 0;
         text-align: center;
-        margin-right: 20px;
+        margin: 20px 20px;
     }
 
     .texto-fundadora h2 {
@@ -138,9 +145,9 @@
   .footer a {
     font-size: 1.5rem;
   }
-}
 
   .copy {
     font-size: 0.75rem;
     padding: 0.5rem;
   }
+}

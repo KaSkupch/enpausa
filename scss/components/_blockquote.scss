@@ -1,5 +1,8 @@
 .frase {
     width: 100%;
+    background-image: url("../../assets/img/manchas-frase.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 .frase-container {
@@ -7,11 +10,7 @@
     place-items: center;
     position: relative;
     width: 100%;
-    background-image: url(../assets/img/manchas\ frase.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 60px 20px;
+    padding: 40px 20px;
 }
 
 blockquote {
@@ -22,4 +21,5 @@ blockquote {
   max-width: 80%;
   padding: 10px 20px;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
