@@ -1,4 +1,4 @@
-@media (max-width:360px) {
+@media (max-width:320px) {
     h1 {
         font-size: small;
     }
@@ -135,6 +135,34 @@
   .articulos {
     margin: 10px;
     padding: 10px;
+  }
+
+  .titulo-entrevista {
+    font-size: large;
+  }
+
+  .intro-contacto .texto {
+    padding: 0;
+  }
+  .datos-contacto {
+    align-items: flex-start;
+    padding: 0 1rem;}
+
+  .dato {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 90%;
+  }
+
+  .mapa iframe {
+    height: 250px;
+    width: fit-content;
+  }
+
+  .contacto {
+    padding: 1rem;
+    gap: 1.5rem;
   }
 
   .footer {

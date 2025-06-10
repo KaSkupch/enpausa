@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* Paleta de colores */
@@ -178,10 +179,10 @@ h1 {
   margin-bottom: 80px;
 }
 
+/*Blog*/
 .articulos {
   display: flex;
   flex-direction: column;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
@@ -192,27 +193,29 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-left: 20px;
   gap: 1.25rem;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .imagen {
-  text-align: center;
-  width: 60%;
-  display: block;
-  border-radius: 8px;
-  margin-left: 50px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .imagen img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 /*contacto*/
 .contacto {
-  padding: 40px 20px;
+  padding: 20px 15px;
   background-color: #fff;
 }
 
@@ -220,30 +223,33 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #e9d6e8;
-  padding: 20px;
+  background-color: rgba(164, 119, 165, 0.4941176471);
+  padding: 20px 30px;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
+  max-width: 1000px;
 }
-.intro-contacto .texto {
+
+.texto {
   flex: 1 1 60%;
   padding-right: 20px;
 }
-.intro-contacto .texto h2 {
+.texto h2 {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-.intro-contacto .texto p {
+.texto p {
   font-size: 1rem;
   line-height: 1.5;
 }
-.intro-contacto .imagen {
+
+.imagen {
   flex: 1 1 30%;
   display: flex;
   justify-content: center;
 }
-.intro-contacto .imagen img {
+.imagen img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -275,6 +281,28 @@ h1 {
   width: 100%;
   max-width: 400px;
   height: auto;
+  border-radius: 8px;
+}
+
+.mapa {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* límite máximo si estás en pantallas grandes */
+  margin: 0 auto; /* centra horizontalmente */
+  padding-bottom: 56.25%; /* proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.mapa iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
   border-radius: 8px;
 }
 
@@ -335,13 +363,12 @@ h1 {
 }
 
 button {
-  margin-top: 0.5rem;
-  display: inline-block;
+  margin-top: 12px;
   padding: 10px 20px;
-  background-color: rgba(164, 119, 165, 0.4941176471);
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
+  background-color: #a1779c;
+  color: white;
+  border: none;
+  border-radius: 8px;
   font-weight: bold;
 }
 
@@ -481,6 +508,42 @@ blockquote {
     margin: 20px;
     padding: 20px;
   }
+  .intro-contacto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .texto {
+    padding-right: 0;
+    flex: 1 1 100%;
+  }
+  .texto h2 {
+    font-size: 1.25rem;
+  }
+  .texto p {
+    font-size: 0.95rem;
+  }
+  .imagen {
+    margin-top: 20px;
+    flex: 1 1 100%;
+  }
+  .imagen img {
+    max-width: 80%;
+  }
+  .imagen .datos-contacto .dato {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .imagen .datos-contacto .dato i {
+    font-size: 1.2rem;
+  }
+  .imagen .datos-contacto .dato h3 {
+    font-size: 0.95rem;
+  }
+  .imagen .datos-contacto .dato p {
+    font-size: 0.9rem;
+  }
   .footer {
     gap: 1.5rem;
     padding: 1.5rem;
@@ -494,7 +557,7 @@ blockquote {
   padding: 0.5rem 1rem;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 320px) {
   h1 {
     font-size: small;
   }
@@ -613,6 +676,30 @@ blockquote {
   .articulos {
     margin: 10px;
     padding: 10px;
+  }
+  .titulo-entrevista {
+    font-size: large;
+  }
+  .intro-contacto .texto {
+    padding: 0;
+  }
+  .datos-contacto {
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+  .dato {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 90%;
+  }
+  .mapa iframe {
+    height: 250px;
+    width: fit-content;
+  }
+  .contacto {
+    padding: 1rem;
+    gap: 1.5rem;
   }
   .footer {
     gap: 1.5rem;
