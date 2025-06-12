@@ -1,7 +1,6 @@
 
-
 .intro a button {
-    border: 4px #A477A5;
+    border: 4px solid #A477A5;
     margin-top: 1.25rem;
     color: white;
     background-color: #A477A5;
@@ -10,7 +9,17 @@
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.intro a button:hover {
+    background-color: white;
+    color: #A477A5;
+    box-shadow: 0 0 10px #A477A5;
+    transform: scale(1.05);
+}
+
 .boton {
   display: inline-block;
   margin-top: 8px;

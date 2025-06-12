@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* Paleta de colores */
@@ -110,6 +109,34 @@ h1 {
 .texto-fundadora h2 {
   margin-top: 0;
   font-size: 22px;
+}
+
+.reels-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #F9F5FA; /* fondo suave lila */
+}
+
+.reels-section h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.reels-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reels-grid iframe {
+  width: 300px;
+  height: 400px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /*Equipo*/
@@ -287,9 +314,9 @@ h1 {
 .mapa {
   position: relative;
   width: 100%;
-  max-width: 600px; /* límite máximo si estás en pantallas grandes */
-  margin: 0 auto; /* centra horizontalmente */
-  padding-bottom: 56.25%; /* proporción 16:9 */
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 8px;
@@ -333,7 +360,7 @@ h1 {
 }
 
 .intro a button {
-  border: 4px #A477A5;
+  border: 4px solid #A477A5;
   margin-top: 1.25rem;
   color: white;
   background-color: #A477A5;
@@ -342,6 +369,15 @@ h1 {
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.intro a button:hover {
+  background-color: white;
+  color: #A477A5;
+  box-shadow: 0 0 10px #A477A5;
+  transform: scale(1.05);
 }
 
 .boton {
@@ -383,9 +419,6 @@ button {
 
 .frase {
   width: 100%;
-  background-image: url("../../assets/img/manchas-frase.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .frase-container {
@@ -394,8 +427,20 @@ button {
   position: relative;
   width: 100%;
   padding: 40px 20px;
+  background-color: rgba(92, 183, 179, 0.2470588235);
+  animation: shadowDrop 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+@keyframes shadowDrop {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(92, 183, 179, 0.4235294118);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 rgba(92, 183, 179, 0.4235294118);
+  }
+}
 blockquote {
   text-align: center;
   font-style: italic;
